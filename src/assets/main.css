@@ -1,0 +1,63 @@
+@import './base.css';
+
+:root {
+    --primary-color: #e7a968;
+    --secondary-color: #F7D488;
+    --third-color: #faf3ee;
+    --fourth-color: #8390aa;
+    --fifth-color: #c5aea1;
+}
+
+.nav-bar {
+    background-color: var(--fifth-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(185, 116, 116, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    margin-right: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-header {
+    background-color: var(--third-color);
+    /* background-image: url(./images/pages.jpg);
+    background-position: center;
+    background-size: cover; */
+    color: #222;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.before-footer {
+    margin-top: 3rem;
+    height: 10vh;
+    background-color: var(--third-color);
+}
+
+.footer {
+    background-color: var(--fifth-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e0892f;
+}
