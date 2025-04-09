@@ -45,6 +45,17 @@ const submit = async () => {
 
     router.push('/admin/books')
 }
+
+const deleteBook = async () => {
+    const confirmed = confirm("Es-tu sûr de vouloir supprimer ce livre ?")
+    if (!confirmed) return
+
+    await fetch(`http://localhost:3000/books/${bookId}`, {
+        method: 'DELETE'
+    })
+
+    router.push('/admin/books')
+}
 </script>
 
 <template>
@@ -113,5 +124,4 @@ textarea {
     margin: 0.5rem 0;
     padding: 0;
 }
-
 </style>
